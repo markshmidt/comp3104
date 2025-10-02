@@ -1,1 +1,62 @@
-html, body, #root { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+/* Page layout */
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: Calibri, "Calibri Light", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#f6f7fb; }
+
+/* Centered card like the screenshot */
+.page { min-height: 100%; display: grid; place-items: center; padding: 24px; }
+.card {
+  width: 720px;
+  max-width: 92vw;
+  background: #fff;
+  border: 1px solid #e6e6e9;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  padding: 28px 36px 36px;
+}
+
+/* Headings */
+.title { margin: 6px 0 2px; text-align: center; font-size: 32px; font-weight: 800; color: #111; }
+.subtitle { margin: 0 0 18px; text-align: center; color: #7a329a; font-weight: 600; }
+
+/* Form */
+.form { max-width: 520px; margin: 0 auto 10px; }
+.row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 10px; margin: 10px 0; }
+.label { text-align: right; color: #333; }
+.input {
+  height: 32px;
+  border: 1px solid #cfd3d7;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+.input:focus { outline: none; border-color: #7a329a; box-shadow: 0 0 0 2px rgba(122,50,154,.12); }
+
+/* Button */
+.actions { display: flex; justify-content: center; margin: 16px 0 8px; }
+.btn {
+  border: 1px solid #4aa15f;
+  background: #4caf6a;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover { filter: brightness(0.98); }
+
+/* List */
+.listTitle { text-align: center; margin: 16px 0 6px; }
+.empty { text-align: center; color: #777; margin: 8px 0 0; }
+
+.list { list-style: none; padding: 0; margin: 10px auto 0; max-width: 560px; }
+.item {
+  display: flex; justify-content: space-between; align-items: center;
+  border: 1px solid #ebedf0; border-radius: 6px; padding: 10px 12px; margin: 8px 0;
+}
+.itemName { font-weight: 700; }
+.itemMeta { color: #555; font-size: 13px; }
+.remove {
+  border: 1px solid #cc2b2b; color: #cc2b2b; background: #fff; padding: 6px 10px;
+  border-radius: 4px; cursor: pointer;
+}
+.remove:hover { background: #fff5f5; }
