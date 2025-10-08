@@ -1,0 +1,5 @@
+COMP3104_GROUP44_Assignment/
+node_modules/
+dist/
+.cache
+.env
